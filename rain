@@ -1,0 +1,30 @@
+import pgzero
+import pgzrun
+import random
+
+WIDTH = 300
+HEIGHT = 300
+
+BOX = Rect ((100,200),(100,40))
+r = 0
+g = 150
+b = 180
+
+COLOR = 0,30,50
+
+TIME1 = 9
+TIME2 = 230
+
+
+def draw (): 
+    screen.fill ((r,g,b))
+
+    screen.draw.filled_circle ((40,30), 50, (255, 130, b))
+
+    screen.draw.rect (BOX, COLOR)
+
+    screen.draw.filled_rect (BOX, COLOR)
+
+    #screen.draw.line (TIME1, TIME2, (COLOR)) funktioniert nicht, warum? 
+
+pgzrun.go()
